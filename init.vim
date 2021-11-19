@@ -13,6 +13,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'mattn/vim-gist'
 	Plug 'ruanyl/vim-fixmyjs'
 	Plug 'mhinz/vim-signify'
+	Plug 'ctrlpvim/ctrlp.vim'
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'junegunn/fzf.vim'
 	Plug 'jlanzarotta/bufexplorer'
@@ -30,6 +31,7 @@ source ~/.config/nvim/themes.vim
 source ~/.config/nvim/lsp-config.vim
 source ~/.config/nvim/nerd_tree.vim
 source ~/.config/nvim/bufexplorer.vim
+source ~/.config/nvim/ctrl_p.vim
 
 " LSP Configs
 luafile ~/.config/nvim/lua/compe-config.lua
