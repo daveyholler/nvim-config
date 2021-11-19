@@ -13,6 +13,9 @@ map <Leader>kl :BD<cr>
 " Fix My JS
 noremap <Leader><Leader>e :Fixmyjs<CR>
 
+" Set Emmet trigger keys
+
+let g:user_emmet_leader_key=","
 " Edit my config 
 noremap <Leader>cfg :e ~/.vim_runtime/my_configs.vim<CR>
 
@@ -58,3 +61,4 @@ command WQ wq
 command Wq wq
 command! W w
 command Q q
+
