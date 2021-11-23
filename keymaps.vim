@@ -22,6 +22,10 @@ noremap <Leader>cfg :e ~/.vim_runtime/my_configs.vim<CR>
 " NERDTree Reload
 nmap <Leader>rn :NERDTreeFocus<cr>R<c-w><c-p>
 
+" Press * to search and leader-r for replacing
+nnoremap <Leader>r :%s///g<Left><Left>
+nnoremap <Leader>rc :%s///gc<Left><Left><Left>
+
 vnoremap <C-c> "+y
 map <C-p> "+p
 map <j> :noh

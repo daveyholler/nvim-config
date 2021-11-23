@@ -9,11 +9,6 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-try
-    colorscheme desert
-catch
-endtry
-
 set background=dark
 
 " Set extra options when running in GUI mode
@@ -30,8 +25,6 @@ set encoding=utf8
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 set termguicolors
-
-source ~/.config/nvim/colors/olivia.vim
 
 colorscheme olivia
 

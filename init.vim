@@ -2,6 +2,7 @@ set number                  " Turns on line numbers
 set sts=2
 set ts=2
 set sw=0
+set expandtab
 
 call plug#begin('~/.vim/plugged')
 	Plug 'qpkorr/vim-bufkill'
@@ -9,6 +10,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'hrsh7th/vim-vsnip'
 	Plug 'neovim/nvim-lspconfig'
 	Plug 'hrsh7th/nvim-compe'
+	Plug 'pangloss/vim-javascript' 
+	Plug 'mxw/vim-jsx'
+	Plug 'HerringtonDarkholme/yats.vim'
 	Plug 'mattn/webapi-vim'
 	Plug 'mattn/vim-gist'
 	Plug 'ruanyl/vim-fixmyjs'
@@ -19,6 +23,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'jlanzarotta/bufexplorer'
 	Plug 'jiangmiao/auto-pairs'
 	Plug 'mattn/emmet-vim'
+	Plug 'challenger-deep-theme/vim'
+	Plug 'tpope/vim-surround'
 call plug#end()
 
 " Keymaps
@@ -37,4 +43,5 @@ source ~/.config/nvim/ctrl_p.vim
 luafile ~/.config/nvim/lua/compe-config.lua
 luafile ~/.config/nvim/lua/lsp/typsescript.lua
 luafile ~/.config/nvim/lua/lsp/solargraph.lua
+luafile ~/.config/nvim/lua/lsp/pyright.lua
 
