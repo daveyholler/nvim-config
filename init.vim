@@ -18,13 +18,20 @@ call plug#begin('~/.vim/plugged')
 	Plug 'ruanyl/vim-fixmyjs'
 	Plug 'mhinz/vim-signify'
 	Plug 'ctrlpvim/ctrlp.vim'
-	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-	Plug 'junegunn/fzf.vim'
+	Plug 'nvim-lua/plenary.nvim'
+	Plug 'nvim-treesitter/nvim-treesitter'
+	Plug 'nvim-telescope/telescope.nvim'
+	Plug 'sharkdp/fd'
 	Plug 'jlanzarotta/bufexplorer'
 	Plug 'jiangmiao/auto-pairs'
 	Plug 'mattn/emmet-vim'
 	Plug 'challenger-deep-theme/vim'
 	Plug 'tpope/vim-surround'
+  Plug 'sheerun/vim-polyglot'
+  Plug 'folke/tokyonight.nvim'
+	Plug 'ap/vim-css-color'
+	Plug 'tpope/vim-endwise'
+	Plug 'vim-ruby/vim-ruby'
 call plug#end()
 
 " Keymaps

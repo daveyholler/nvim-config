@@ -26,11 +26,14 @@ set encoding=utf8
 set ffs=unix,dos,mac
 set termguicolors
 
-colorscheme olivia
-
+colorscheme olivia 
+" let g:lightline = {'colorscheme': 'tokyonight'}
+" let g:tokyonight_style = "night"
+let g:tokyonight_italic_functions = 1
 hi Normal guibg=None ctermbg=None
 hi LineNr guibg=None ctermbg=None
 hi SignColumn guibg=None ctermbg=None
 hi CursorLine guibg=None ctermbg=None
 hi FoldColumn guibg=None ctermbg=None
 hi NonText guibg=None ctermbg=None
+
