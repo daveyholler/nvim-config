@@ -32,6 +32,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'ap/vim-css-color'
 	Plug 'tpope/vim-endwise'
 	Plug 'vim-ruby/vim-ruby'
+	Plug 'bluz71/vim-nightfly-guicolors'
 call plug#end()
 
 " Keymaps
