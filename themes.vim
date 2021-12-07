@@ -26,7 +26,7 @@ set encoding=utf8
 set ffs=unix,dos,mac
 set termguicolors
 
-colorscheme nightfly
+colorscheme rose-pine
 let g:nightflyCursorColor = 1
 " let g:lightline = {'colorscheme': 'tokyonight'}
 " let g:tokyonight_style = "night"

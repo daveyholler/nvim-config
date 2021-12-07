@@ -11,7 +11,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'neovim/nvim-lspconfig'
 	Plug 'hrsh7th/nvim-compe'
 	Plug 'pangloss/vim-javascript' 
-	Plug 'mxw/vim-jsx'
+	Plug 'MaxMEllon/vim-jsx-pretty'
 	Plug 'HerringtonDarkholme/yats.vim'
 	Plug 'mattn/webapi-vim'
 	Plug 'mattn/vim-gist'
@@ -21,6 +21,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-treesitter/nvim-treesitter'
 	Plug 'nvim-telescope/telescope.nvim'
+	Plug 'nvim-telescope/telescope-fzy-native.nvim'
 	Plug 'sharkdp/fd'
 	Plug 'jlanzarotta/bufexplorer'
 	Plug 'jiangmiao/auto-pairs'
@@ -33,6 +34,13 @@ call plug#begin('~/.vim/plugged')
 	Plug 'tpope/vim-endwise'
 	Plug 'vim-ruby/vim-ruby'
 	Plug 'bluz71/vim-nightfly-guicolors'
+	Plug 'theniceboy/nvim-deus'
+	Plug 'fenetikm/falcon'
+	Plug 'EdenEast/nightfox.nvim'
+	Plug 'rose-pine/neovim'
+	Plug 'nvim-lualine/lualine.nvim'
+	Plug 'kyazdani42/nvim-web-devicons'
+	Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 " Keymaps
@@ -46,10 +54,12 @@ source ~/.config/nvim/lsp-config.vim
 source ~/.config/nvim/nerd_tree.vim
 source ~/.config/nvim/bufexplorer.vim
 source ~/.config/nvim/ctrl_p.vim
+luafile ~/.config/nvim/lua/_telescope.lua
+luafile ~/.config/nvim/lua/lualine.lsp
 
 " LSP Configs
 luafile ~/.config/nvim/lua/compe-config.lua
-luafile ~/.config/nvim/lua/lsp/typsescript.lua
-luafile ~/.config/nvim/lua/lsp/solargraph.lua
-luafile ~/.config/nvim/lua/lsp/pyright.lua
+luafile ~/.config/nvim/lua/lsp/lsp.lua
+
+set relativenumber
 
