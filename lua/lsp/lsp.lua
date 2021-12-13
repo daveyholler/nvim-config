@@ -12,7 +12,7 @@ local function setup_servers()
     this_buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
     k.buf.mapi('<C-u>', '<C-x><C-o>')
     k.buf.mapn('K', '<cmd>lua vim.lsp.buf.hover()<CR>')
-    k.buf.mapn('<Leader>r', '<cmd>lua vim.lsp.buf.rename()<CR>')
+    -- k.buf.mapn('<Leader>r', '<cmd>lua vim.lsp.buf.rename()<CR>')
   end
 
   local function attacher_fmt(client)

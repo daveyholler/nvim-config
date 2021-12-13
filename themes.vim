@@ -37,4 +37,3 @@ hi SignColumn guibg=None ctermbg=None
 hi CursorLine guibg=None ctermbg=None
 hi FoldColumn guibg=None ctermbg=None
 hi NonText guibg=None ctermbg=None
-
