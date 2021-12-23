@@ -39,8 +39,13 @@ call plug#begin('~/.vim/plugged')
 	Plug 'EdenEast/nightfox.nvim'
 	Plug 'rose-pine/neovim'
 	Plug 'nvim-lualine/lualine.nvim'
+	Plug 'noib3/nvim-cokeline'
 	Plug 'kyazdani42/nvim-web-devicons'
 	Plug 'ryanoasis/vim-devicons'
+	Plug 'glepnir/dashboard-nvim'
+	Plug 'junegunn/goyo.vim'
+	Plug 'tpope/vim-dotenv'
+	Plug 'rebelot/kanagawa.nvim'
 call plug#end()
 
 " Keymaps
@@ -54,7 +59,9 @@ source ~/.config/nvim/lsp-config.vim
 source ~/.config/nvim/nerd_tree.vim
 source ~/.config/nvim/bufexplorer.vim
 source ~/.config/nvim/ctrl_p.vim
+source ~/.config/nvim/vimroom.vim
 luafile ~/.config/nvim/lua/_telescope.lua
+" luafile ~/.config/nvim/lua/_cokeline.lua
 luafile ~/.config/nvim/lua/lualine.lsp
 
 " LSP Configs

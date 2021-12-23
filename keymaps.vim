@@ -34,10 +34,10 @@ map <j> :noh
 map <silent> <leader><cr> :noh<cr>
 
 " Smart way to move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
 
 " Close all the buffers
 map <leader>ba :bufdo bd<cr>
@@ -77,3 +77,32 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
 let g:copilot_no_tab_map = v:true
+
+let g:dashboard_default_executive ='telescope'
+let g:dashboard_custom_header = [
+			\' ██╗  ██╗ ██████╗ ██╗     ██╗     ███████╗██████╗ ',
+			\' ██║  ██║██╔═══██╗██║     ██║     ██╔════╝██╔══██╗',
+			\' ███████║██║   ██║██║     ██║     █████╗  ██████╔╝',
+			\' ██╔══██║██║   ██║██║     ██║     ██╔══╝  ██╔══██╗',
+			\' ██║  ██║╚██████╔╝███████╗███████╗███████╗██║  ██║',
+			\' ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝',
+			\	]
+" let g:dashboard_custom_header = [
+" 			\'	                         .-:+osyyyyys+:::.                  ',
+" 			\'                 `-/oydmmhysoydNMNdhysssshNh-               ',
+" 			\'              :smNho/-`  -odNho:`         .mM:              ',
+" 			\'            `dMsoymd`-ohNdo:            .:`/Md              ',
+" 			\'            hMomMhshNds::ys+/:-::     -sMd..MM.             ',
+" 			\'            mM//yyo:` ymddmmmmmdh//ohNds-   NMmmmdyo:`      ',
+" 			\'         -+yNM/         .:/+ssyyyso/-`      yMs  .:+yNms.   ',
+" 			\'     `/yNds/dM+                             -MN:  ./- -hMy` ',
+" 			\'   .yMd+`   sMy                           `:+mMmoyMMM+  yMs ',
+" 			\'  sMd-      +Md                      -+yhMMMMMNMMMNy:  `dM+ ',
+" 			\' oMh       -dy-  `                .smMMMNdmy-   `    .sNm/  ',
+" 			\' sMy            ommhysoo+++oosyhdmMMMmo.          -odNy:    ',
+" 			\' `hMy.             .-:///++/oNMMMMms:        ./ohNdo:       ',
+" 			\'   -yNds/.                    `-:`    `-/oydNdy+-           ',
+" 			\'      -+ydNdhso+/:---------::/+osyhdmmdys+:.                ',
+" 			\'           `-:/+osyyyyyyyyssoo+/:-.`',
+" 			\ 	]
+let g:dashboard_custom_footer = ["I DON'T KNOW WHAT I'M DOING..."]
